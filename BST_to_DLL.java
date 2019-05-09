@@ -23,8 +23,8 @@ public class BST_to_DLL {
             temp=root;
         else
         {
-            temp.left=root;
-            root.right=temp;
+            temp.left=prev;
+            prev.right=temp;
         }
         prev=root;
         System.out.println(prev.data);
